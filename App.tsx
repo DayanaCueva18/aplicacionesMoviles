@@ -1,19 +1,28 @@
-import 'react-native-gesture-handler';
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, View } from 'react-native';
-//import { LoginScreen } from './src/components/screens/LoginScreen';
-import { StackNavigator } from './src/navigator/StackNavigator';
+import React from 'react'
+import { HolaMundo } from './src/screens/HolaMundo';
+import { ContadorScreen } from './src/screens/ContadorScreen';
+import { BoxObjectScreen } from './src/screens/BoxObjectScreen';
+import { SafeAreaView, SafeAreaViewBase } from 'react-native';
+import { DimensionesScreen } from './src/screens/DimensionesScreen';
+import { PositionScreen } from './src/screens/PositionScreen';
+import { FlexScreen } from './src/screens/FlexScreen';
 
-const App=()=>{
-  return(
-    
-      <NavigationContainer>
-      {/* <LoginScreen/> */}
-      <StackNavigator/>
-      </NavigationContainer>
+
+
+export const App = () => {
+  return (
+    <SafeAreaView style={
+      {flex:1}
+    }>
+  {/* <HolaMundo/>; */}
+  {/* <ContadorScreen/> */}
+
+  {/* <BoxObjectScreen/> */}
+  {/* <DimensionesScreen/> */}
+  {/* <PositionScreen/> */}
+  <FlexScreen/>
+
   
+  </SafeAreaView>
   )
 }
-
-export default App;
